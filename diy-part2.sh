@@ -28,7 +28,7 @@ git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/ope
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # 修改默认 IP（如有需要可取消注释）
-# sed -i 's/192.168.1.1/192.168.123.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 
 # 修改主机名
 sed -i 's/LEDE/iStoreOS/g' package/base-files/files/bin/config_generate
